@@ -188,8 +188,9 @@ import clip
 app = FastAPI()
 SAVE_DIR = "artifacts"
 
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+DEVICE = "cpu"
 print(f"Using device: {DEVICE}")
+
 
 # -----------------------------
 # CORS
